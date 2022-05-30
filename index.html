@@ -1,8 +1,84 @@
 <!DOCTYPE html>
-<html>
-  <title>Made Super</title>
-<body>
-<h1>Made Super</h1>
-<p>This is made super.</p>
-</body>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="theme-color" content="#FF105A">
+      <title>Made Super</title>
+      <link rel="icon" href="/favicon.ico" sizes="any">
+      <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+      <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+      <link rel="manifest" href="/manifest.webmanifest">
+      <link rel="stylesheet" href="https://use.typekit.net/mea0mzx.css">
+      <link rel="stylesheet" href="system.css">
+      <script src="system.js" defer="defer"></script>
+   </head>
+   <body class="booting">
+      <div class="scanlines"></div>
+      <div class="message" style="display:none;">
+         <div id=lockeddiv style='font-style:italic'></div>
+         <div id=messagediv style='font-style:italic'>Tap for music.</div>
+      </div>
+      <ul id="screens">
+         <!--***********************************
+            Boot Screen
+            ************************************-->
+         <li id="screen--boot" class="screen showing">
+            <!--
+               <div>Made Super is a company making software made super. Based in United Kingdon.</p>  </div>
+               <div>&copy; 2020 Made Super, LTD. <p>  </div>
+                 <div><a class="controls" id="start">Press to Start</a>  </div>-->
+         </li>
+         <!--***********************************
+            Ident Screen
+            ************************************-->
+         <li id="screen--ident" class="screen">
+            <img src="madesuper.svg" alt="made super" class="ident">
+         </li>
+         <!--***********************************
+            Menu Screen
+            ************************************-->
+         <li id="screen--menu" class="screen">
+            <div class="badge">
+               <img src="badge-text.svg" alt="this made super" class="badge--text">
+               <img src="badge-image.svg" alt="ren" class="badge--image">
+               <div class="badge--image-ping">
+                  <img src="badge-ping.svg" class="badge--image-ping--1">
+                  <img src="badge-ping.svg" class="badge--image-ping--2">
+                  <img src="badge-ping.svg" class="badge--image-ping--3">
+               </div>
+            </div>
+            <div class="startmenu">
+               <h6>Select Mode</h6>
+               <ul>
+                  <li><a class="controls" id="about" href="javascript:void(0);">About</a> </li>
+                  <li><a class="controls" id="support" href="javascript:void(0);">Contact</a></li>
+               </ul>
+            </div>
+            <br>
+            <!--<button class="controls" id="reboot">Reboot</button>-->
+            <div class="copyright">&copy; 2022 Made Super, LTD.</div>
+         </li>
+         <!--***********************************
+            About Screen
+            ************************************-->
+         <li id="screen--options" class="screen">
+            <div class="rte">
+               <p>Made Super is a company making software made super. Based in United Kingdon. we’re are making apps help your business grow, your customers happy and your developers thankfull :) </p>
+            </div>
+            <a class="controls button button--flicker" onclick="exitScreen();return false;">Exit</a>
+         </li>
+         <!--***********************************
+            Contact Screen
+            ************************************-->
+         <li id="screen--options" class="screen">
+            <div class="rte">
+               <p>We are currently working on releasing our software.</p>
+               <p>You can email us at hi@madesuper.com</p>
+            </div>
+            <a class="controls button button--flicker" onclick="exitScreen();return false;">Exit</a>
+         </li>
+      </ul>
+   </body>
 </html>
