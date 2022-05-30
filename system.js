@@ -28,10 +28,6 @@ function goToScreen(n) {
 
 function ident() {
 	goToScreen(1);
-	setTimeout(function() {
-		chime.play()
-		console.log('your audio is started just now');
-	}, 1000)
 	setTimeout(startScreen, 5000);
 }
 
@@ -40,7 +36,6 @@ function startScreen() {
 	scheme.setAttribute('content', '#481CEA')
 	goToScreen(2);
 	setTimeout(function() {
-		music.play()
 		console.log('your audio is started just now');
 	}, 1000)
 }
@@ -69,19 +64,4 @@ supoort.onclick = function() {
 var about = document.getElementById('about');
 about.onclick = function() {
 	aboutScreen();
-};
-
-var exit = document.getElementById('exit');
-
-exit.onclick = function() {
-	exitScreen();
-};
-
-var reboot = document.getElementById('reboot');
-
-reboot.onclick = function() {
-	console.log('reboot');
-	music.pause();
-	music.currentTime = 0;
-	bootScreen();
 };
