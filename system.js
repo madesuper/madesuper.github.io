@@ -33,7 +33,8 @@ function ident() {
 
 function startScreen() {
 	let scheme = document.querySelector('meta[name="theme-color"]');
-	scheme.setAttribute('content', '#481CEA')
+	scheme.setAttribute('content', '#481CEA');
+  body.classList.add("start");
 	goToScreen(2);
 	setTimeout(function() {
 		console.log('your audio is started just now');
