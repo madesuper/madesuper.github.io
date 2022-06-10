@@ -348,6 +348,14 @@
      text-align: center;
      left:0;
 }
+#screen--menu .copyright a{
+  color: #F7F7EA;
+  -webkit-text-stroke: 1px #481CEA;
+  text-decoration: none;
+}
+#screen--menu .copyright a:hover{
+  border-bottom: #F7F7EA solid 1px;
+}
 
  .underline{
 	      position: relative;
