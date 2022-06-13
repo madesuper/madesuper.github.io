@@ -56,7 +56,8 @@
      max-width: 900px;
      text-align: center;
      max-height: 100vh;
-     overflow: auto;
+     overflow-y: auto;
+     overflow-x: visible;
 }
  .rte p{
      font-size: calc(1rem + 0.5vh);
