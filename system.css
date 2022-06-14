@@ -317,10 +317,9 @@
      opacity: 0;
 }
  .badge--image{
-     width: 76%;
+     width: 84%;
      position: absolute;
-     left: 15%;
-     bottom: 10%;
+     left: 14%;
      opacity: 0;
 }
  #screen--menu.showing .badge--image{
